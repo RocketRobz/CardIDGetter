@@ -29,6 +29,7 @@ script:
   - export COMMIT_TAG="$(git log --format=%h -1)"
   - export COMMIT_MESSAGE="$(git log --pretty=format:"%an - %s" -1)"
   - make
+  - mv GetCardID.nds CardIDGetter.nds
   - mkdir CardIDGetter/
   - cp CardIDGetter.nds CardIDGetter/
   - 7z a CardIDGetter.7z CardIDGetter/
