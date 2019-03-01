@@ -48,18 +48,7 @@ int main(int argc, char **argv) {
 		u32 cardId = cardReadID(0);
 		printf("Here is the card ID:\n");
 		printf("%X", (int)cardId);
-		/*char cardIdText[8];
-		snprintf(cardIdText, 8, "%X", (int)cardId);
-		// Change any blank characters to 0
-		for (int i = 0; i < 7; i++) {
-			if (cardIdText[i] == '\x00') {
-				cardIdText[i] = '\x30';
-			}
-		}
-		printf("%s%s%s%s%s%s%s%s", cardIdText[6], cardIdText[7],
-									cardIdText[4], cardIdText[5],
-									cardIdText[2], cardIdText[3],
-									cardIdText[0], cardIdText[1]);*/
+
 		printf("\n\n");
 		printf("Press any button to re-get\ncard ID, if another card\nis inserted.");
 
